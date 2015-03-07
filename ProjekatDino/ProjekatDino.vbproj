@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74E7BB8B-5250-49C7-82DC-8553F984B3D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProjekatDino.My.MyApplication</StartupObject>
+    <RootNamespace>ProjekatDino</RootNamespace>
+    <AssemblyName>ProjekatDino</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProjekatDino.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProjekatDino.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Artikal.vb" />
+    <Compile Include="ArtikalRacun.Designer.vb">
+      <DependentUpon>ArtikalRacun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArtikalRacun.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DodajArtikal.Designer.vb">
+      <DependentUpon>DodajArtikal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DodajArtikal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajKupca.Designer.vb">
+      <DependentUpon>DodajKupca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DodajKupca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajRacun.Designer.vb">
+      <DependentUpon>DodajRacun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DodajRacun.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderRacun.Designer.vb">
+      <DependentUpon>HeaderRacun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeaderRacun.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kupac.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NapraviRacun.Designer.vb">
+      <DependentUpon>NapraviRacun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NapraviRacun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledajArtikle.Designer.vb">
+      <DependentUpon>PregledajArtikle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PregledajArtikle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledajKupce.Designer.vb">
+      <DependentUpon>PregledajKupce.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PregledajKupce.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromjeniArtikal.Designer.vb">
+      <DependentUpon>PromjeniArtikal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PromjeniArtikal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromjeniKupca.Designer.vb">
+      <DependentUpon>PromjeniKupca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PromjeniKupca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ArtikalRacun.resx">
+      <DependentUpon>ArtikalRacun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajArtikal.resx">
+      <DependentUpon>DodajArtikal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajKupca.resx">
+      <DependentUpon>DodajKupca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajRacun.resx">
+      <DependentUpon>DodajRacun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderRacun.resx">
+      <DependentUpon>HeaderRacun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NapraviRacun.resx">
+      <DependentUpon>NapraviRacun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledajArtikle.resx">
+      <DependentUpon>PregledajArtikle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledajKupce.resx">
+      <DependentUpon>PregledajKupce.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromjeniArtikal.resx">
+      <DependentUpon>PromjeniArtikal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromjeniKupca.resx">
+      <DependentUpon>PromjeniKupca.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

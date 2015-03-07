@@ -1,0 +1,2 @@
+﻿1|Faruk|Ljuca|Kemala Kapetanovića 53|Sarajevo|1234567890123|71000|
+2|Elmedin|Ljuca|Zmaja od Bosne 24|Sarajevo|1234567676767|11111|
